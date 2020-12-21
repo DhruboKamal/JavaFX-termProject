@@ -106,27 +106,30 @@ public class App
 
                                  viewerController(sckt);
 
-                             }else if(request.equalsIgnoreCase("findByReg")){//search by registration number
-                                 ObjectInputStream objectInputStream1 = new ObjectInputStream(sckt.getInputStream());
-                                 String regNo = (String) objectInputStream1.readObject();
+                             }else if(request.equalsIgnoreCase("findByReg")){
+                                 //search by registration number
+                                 System.out.println("Search car by Reg no request");
+
+                                 //ObjectInputStream objectInputStream1 = new ObjectInputStream(sckt.getInputStream());
+                                 String regNo = (String) objectInputStream.readObject();
                                  System.out.println(regNo);
 
                                  Car cr = null;
                                  for(Car c: lst){
                                      if(c.getRegistration().equalsIgnoreCase(regNo)){
                                          cr=c;
+                                         System.out.println("Car Reg no found.");
+                                         c.DisplayInfo();
                                      }
                                  }
                                  ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
                                  objectoutputstream.writeObject(cr);
                                  objectoutputstream.flush();
 
-
-
-                             }else if(request.equalsIgnoreCase("findMakeModel")){//search by make model
-
-                             }else if(request.equalsIgnoreCase("buy")){
-
+                                 viewerController(sckt);
+                             }
+                             else if(request.equalsIgnoreCase("findMakeModel")){
+                                 //search by make model
                              }
                          } catch (IOException | ClassNotFoundException e) {
                              e.printStackTrace();

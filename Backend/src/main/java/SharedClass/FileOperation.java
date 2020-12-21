@@ -22,7 +22,7 @@ public class FileOperation {
                 //Line represents details of a car.
                 //System.out.println(line);
                 String[] CarDetails = line.split(",", -1);
-                Car temp = new Car(CarDetails[0], parseInt(CarDetails[1]), CarDetails[2], CarDetails[3], CarDetails[4], CarDetails[5], CarDetails[6], parseInt(CarDetails[7]),parseInt(CarDetails[8]));
+                Car temp = new Car(CarDetails[0], parseInt(CarDetails[1]), CarDetails[2], CarDetails[3], CarDetails[4], CarDetails[5], CarDetails[6], parseInt(CarDetails[7]));
                 lst.add(temp);
             }
             br.close();
