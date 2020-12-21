@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="460.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.viewer.ViewerSceneBuilder">
+   <children>
+      <Label layoutX="288.0" layoutY="33.0" text="Viewer Window">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="viewAllCarBtn" layoutX="57.0" layoutY="107.0" mnemonicParsing="false" onAction="#viewAllCar" text="View All cars">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="regnofield" layoutX="515.0" layoutY="147.0" />
+      <Label layoutX="391.0" layoutY="117.0" text="Search Car by Registration Number " textFill="#d70b0b">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="391.0" layoutY="185.0" mnemonicParsing="false" onAction="#SearchByRegNo" text="Search Car" />
+      <Label layoutX="391.0" layoutY="240.0" text="Search Car by Model and Make" textFill="#cd1616">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="151.0" text="Registration Number" />
+      <Label layoutX="391.0" layoutY="282.0" text="Make" />
+      <Label layoutX="391.0" layoutY="319.0" text="Model" />
+      <TextField fx:id="makefield" layoutX="510.0" layoutY="278.0" />
+      <TextField fx:id="modelfield" layoutX="510.0" layoutY="315.0" />
+      <Button layoutX="384.0" layoutY="351.0" mnemonicParsing="false" onAction="#searchByModelAndMake" text="Search Car" />
+   </children>
+</AnchorPane>

@@ -5,9 +5,12 @@ import SharedClass.User;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -53,13 +56,16 @@ public class Controller {
                         A.setContentText("Wrong Username of Password");
                         A.showAndWait();
                     }
-                    if(response.equalsIgnoreCase("viewer detected")){
+                    else if(response.equalsIgnoreCase("viewer detected")){
                         //server confirmed that its a viewer.
+                        FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample/viewer/viewerScene.fxml"));
+                        Stage stage = (Stage) loginbutton.getScene().getWindow();
+                        stage.setTitle("Viewer Window");
+                        Scene scene = new Scene(loader.load(), 700.0, 460.0);
+                        stage.setScene(scene);
+                    }
+                    else if(response.equalsIgnoreCase("manufacture detected")){
 
-                        List<Car> lst = (List<Car>) ois.readObject();
-                        for (Car c : lst){
-                            c.DisplayInfo();
-                        }
                     }
                 }
                 catch (Exception e){

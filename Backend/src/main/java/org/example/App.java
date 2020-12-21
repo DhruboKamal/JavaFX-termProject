@@ -69,10 +69,7 @@ public class App
 
                                  oos.writeObject("viewer detected");
                                  oos.flush();
-
-
-                                 oos.writeObject(lst);
-                                 oos.flush();
+                                 viewerController(sckt);
 
                              }
                              else {
@@ -92,13 +89,49 @@ public class App
                                  }
 
                              }
-
-
-
                          }
                          catch (IOException | ClassNotFoundException e) {
                              e.printStackTrace();
                          }
+                     }
+                     private void viewerController(Socket sckt) {
+                         try{
+                             ObjectInputStream objectInputStream = new ObjectInputStream(sckt.getInputStream());
+                             String request = (String) objectInputStream.readObject();
+                             if(request.equalsIgnoreCase("viewAllCars")){//view all car
+
+                                 ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
+                                 objectoutputstream.writeObject(lst);
+                                 objectoutputstream.flush();
+
+                                 viewerController(sckt);
+
+                             }else if(request.equalsIgnoreCase("findByReg")){//search by registration number
+                                 ObjectInputStream objectInputStream1 = new ObjectInputStream(sckt.getInputStream());
+                                 String regNo = (String) objectInputStream1.readObject();
+                                 System.out.println(regNo);
+
+                                 Car cr = null;
+                                 for(Car c: lst){
+                                     if(c.getRegistration().equalsIgnoreCase(regNo)){
+                                         cr=c;
+                                     }
+                                 }
+                                 ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
+                                 objectoutputstream.writeObject(cr);
+                                 objectoutputstream.flush();
+
+
+
+                             }else if(request.equalsIgnoreCase("findMakeModel")){//search by make model
+
+                             }else if(request.equalsIgnoreCase("buy")){
+
+                             }
+                         } catch (IOException | ClassNotFoundException e) {
+                             e.printStackTrace();
+                         }
+
                      }
                  }.start();
             }
