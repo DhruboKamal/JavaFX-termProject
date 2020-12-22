@@ -11,6 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.util.Pair;
 import sample.SocketConnection;
 
 import java.io.IOException;
@@ -75,6 +76,37 @@ public class ViewerSceneBuilder {
 
     @FXML
     void searchByModelAndMake(ActionEvent event) {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                ObjectOutputStream objectoutputstream = null;
+                try {
+                    objectoutputstream = new ObjectOutputStream(SocketConnection.getInstance().getSocket().getOutputStream());
+                    objectoutputstream.writeObject("findMakeModel");
+                    objectoutputstream.flush();
+
+                    String make = makefield.getText();
+                    String model = makefield.getText();
+
+                    objectoutputstream.writeObject(make);
+                    objectoutputstream.flush();
+
+
+                    objectoutputstream.writeObject(model);
+                    objectoutputstream.flush();
+
+                    //Loading JavaFX
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample/viewer/makeModelCar.fxml"));
+                    Stage stage = (Stage) viewAllCarBtn.getScene().getWindow();
+                    stage.setTitle("Searching Using Make and Model");
+                    Scene scene = new Scene(loader.load(), 700.0, 460.0);
+                    stage.setScene(scene);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
     }
 

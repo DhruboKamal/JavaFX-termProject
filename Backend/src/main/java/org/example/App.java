@@ -131,6 +131,29 @@ public class App
                              }
                              else if(request.equalsIgnoreCase("findMakeModel")){
                                  //search by make model
+                                 String make = (String) objectInputStream.readObject();
+
+                                 ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
+                                 objectoutputstream.writeObject("make Received.Send model");
+                                 objectoutputstream.flush();
+
+                                 String model = (String) objectInputStream.readObject();
+                                 System.out.println("Incomming Request , Make: "+ make + " Model: "+ model);
+                                 ArrayList<Car> lst2 = new ArrayList<>();
+                                 for(int i=0; i< lst.size() ; i++){
+                                     if( (lst.get(i).getMaker().equalsIgnoreCase(make) && lst.get(i).getModel().equalsIgnoreCase(model))  || (lst.get(i).getMaker().equalsIgnoreCase(make) && model.equalsIgnoreCase(""))){
+                                         lst2.add(lst.get(i));
+                                     }
+                                 }
+
+                                 System.out.println("Search Result by model and make");
+                                 for(Car c : lst2){c.DisplayInfo();}
+
+                                 //ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
+                                 objectoutputstream.writeObject(lst2);
+                                 objectoutputstream.flush();
+
+                                 viewerController(sckt);
                              }
                          } catch (IOException | ClassNotFoundException e) {
                              e.printStackTrace();

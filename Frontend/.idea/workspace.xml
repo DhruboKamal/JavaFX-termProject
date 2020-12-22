@@ -3,28 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/SharedClass/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/SharedClass/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/SharedClass/FileOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/SharedClass/FileOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/target/classes/SharedClass/FileOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/target/classes/SharedClass/FileOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Backend/target/classes/org/example/App$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/target/classes/org/example/App$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Backend/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/target/classes/org/example/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frontend/sample/Manufacturer/ManufacturerScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frontend/sample/Manufacturer/ManufacturerScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frontend/sample/Manufacturer/ManufacturerSceneController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frontend/sample/Manufacturer/ManufacturerSceneController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frontend/sample/Manufacturer/ManufacturerSceneController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frontend/sample/Manufacturer/ManufacturerSceneController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frontend/sample/Manufacturer/ManufacturerSceneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frontend/sample/Manufacturer/ManufacturerSceneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frontend/sample/viewer/AllCarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frontend/sample/viewer/AllCarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frontend/sample/viewer/ViewerSceneBuilder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frontend/sample/viewer/ViewerSceneBuilder$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Frontend/sample/viewer/ViewerSceneBuilder$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frontend/sample/viewer/ViewerSceneBuilder$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Frontend/sample/viewer/ViewerSceneBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frontend/sample/viewer/ViewerSceneBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SharedClass/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SharedClass/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Manufacturer/ManufacturerAllCar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Manufacturer/ManufacturerAllCar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Manufacturer/ManufacturerAllCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Manufacturer/ManufacturerAllCarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Manufacturer/ManufacturerScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Manufacturer/ManufacturerScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Manufacturer/ManufacturerSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Manufacturer/ManufacturerSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/viewer/AllCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/viewer/AllCarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/viewer/ViewerSceneBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/viewer/ViewerSceneBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/viewer/allCar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/viewer/allCar.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +203,7 @@
       <workItem from="1608600516838" duration="4554000" />
       <workItem from="1608605818040" duration="1247000" />
       <workItem from="1608607103885" duration="1767000" />
-      <workItem from="1608608911024" duration="856000" />
+      <workItem from="1608608911024" duration="3587000" />
     </task>
     <servers />
   </component>
@@ -246,26 +232,26 @@
     </state>
     <state x="-1180" y="261" key="FileChooserDialogImpl/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608568739535" />
     <state x="566" y="217" key="FileChooserDialogImpl/0.0.1468.864@0.0.1468.864" timestamp="1608584336905" />
-    <state width="1425" height="158" key="GridCell.Tab.0.bottom" timestamp="1608609776084">
+    <state width="1425" height="662" key="GridCell.Tab.0.bottom" timestamp="1608612504898">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state width="1877" height="210" key="GridCell.Tab.0.bottom/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608578945088" />
-    <state width="1425" height="158" key="GridCell.Tab.0.bottom/0.0.1468.864@0.0.1468.864" timestamp="1608609776084" />
-    <state width="1425" height="158" key="GridCell.Tab.0.center" timestamp="1608609776083">
+    <state width="1425" height="662" key="GridCell.Tab.0.bottom/0.0.1468.864@0.0.1468.864" timestamp="1608612504898" />
+    <state width="1425" height="662" key="GridCell.Tab.0.center" timestamp="1608612504898">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state width="1877" height="210" key="GridCell.Tab.0.center/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608578945088" />
-    <state width="1425" height="158" key="GridCell.Tab.0.center/0.0.1468.864@0.0.1468.864" timestamp="1608609776083" />
-    <state width="1425" height="158" key="GridCell.Tab.0.left" timestamp="1608609776083">
+    <state width="1425" height="662" key="GridCell.Tab.0.center/0.0.1468.864@0.0.1468.864" timestamp="1608612504898" />
+    <state width="1425" height="662" key="GridCell.Tab.0.left" timestamp="1608612504898">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state width="1877" height="210" key="GridCell.Tab.0.left/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608578945087" />
-    <state width="1425" height="158" key="GridCell.Tab.0.left/0.0.1468.864@0.0.1468.864" timestamp="1608609776083" />
-    <state width="1425" height="158" key="GridCell.Tab.0.right" timestamp="1608609776083">
+    <state width="1425" height="662" key="GridCell.Tab.0.left/0.0.1468.864@0.0.1468.864" timestamp="1608612504898" />
+    <state width="1425" height="662" key="GridCell.Tab.0.right" timestamp="1608612504898">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state width="1877" height="210" key="GridCell.Tab.0.right/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608578945088" />
-    <state width="1425" height="158" key="GridCell.Tab.0.right/0.0.1468.864@0.0.1468.864" timestamp="1608609776083" />
+    <state width="1425" height="662" key="GridCell.Tab.0.right/0.0.1468.864@0.0.1468.864" timestamp="1608612504898" />
     <state x="-1480" y="94" key="SettingsEditor" timestamp="1608564656491">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
