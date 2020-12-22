@@ -46,5 +46,9 @@ public class Car implements Serializable {
     public String getModel(){
         return model;
     }
+
+    public Car getCar(){
+        return this;
+    }
 }
 

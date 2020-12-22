@@ -10,7 +10,6 @@ import static java.lang.Integer.parseInt;
 
 public class FileOperation {
     private static final String INPUT_FILE_NAME = "in.txt";
-    private static final String OUTPUT_FILE_NAME = "out.txt";
 
     public static void initialize(List<Car> lst){
         try {
@@ -31,9 +30,9 @@ public class FileOperation {
         }
     }
 
-    public static void Terminate(List<Car> lst){
+    public static void Update(List<Car> lst){
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(OUTPUT_FILE_NAME));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(INPUT_FILE_NAME));
             for(Car x: lst){
                 bw.write(String.valueOf(x));
                 bw.write("\n");
@@ -43,4 +42,5 @@ public class FileOperation {
             e.printStackTrace();
         }
     }
+
 }

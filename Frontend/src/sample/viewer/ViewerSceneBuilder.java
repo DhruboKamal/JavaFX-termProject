@@ -89,11 +89,7 @@ public class ViewerSceneBuilder {
                     objectoutputstream.writeObject("viewAllCars");
                     objectoutputstream.flush();
 
-                    //receiving the car list
-                    ObjectInputStream ois = new ObjectInputStream(SocketConnection.getInstance().getSocket().getInputStream());
-                    List<Car> lst = (List<Car>) ois.readObject();
-                    System.out.println("All Cars in the list is received by viewer.");
-                    for (Car c: lst){c.DisplayInfo();}
+
                     //Loading JavaFX
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample/viewer/allCar.fxml"));
                     Stage stage = (Stage) viewAllCarBtn.getScene().getWindow();
@@ -101,7 +97,7 @@ public class ViewerSceneBuilder {
                     Scene scene = new Scene(loader.load(), 700.0, 460.0);
                     stage.setScene(scene);
 
-                } catch (IOException | ClassNotFoundException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
 

@@ -163,12 +163,35 @@ public class App
                                  else{
                                      lst.remove(deleteidx);
                                      ReplyMessage="Delete Successful";
+                                     FileOperation.Update(lst);
                                  }
                                  ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
                                  objectoutputstream.writeObject(ReplyMessage);
 
                                  manufacturerController(sckt);
 
+                             }
+                             else if(request.equalsIgnoreCase("AddCar")) {
+                                 Car tempCar = (Car) objectInputStream.readObject();
+                                 boolean uniqueregno = true;
+                                 String ReplyMessage = null;
+                                 for(int i=0; i< lst.size() ; i++){
+                                     if(lst.get(i).getRegistration().equalsIgnoreCase(tempCar.getRegistration())){
+                                         ReplyMessage= "Registration No Already Exists. Can't add car";
+                                         uniqueregno = false;
+                                         break;
+                                     }
+                                 }
+                                 if (uniqueregno){
+                                     lst.add(tempCar);
+                                     ReplyMessage = "Car Added Successfully";
+                                     FileOperation.Update(lst);
+                                 }
+
+                                 ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
+                                 objectoutputstream.writeObject(ReplyMessage);
+
+                                 manufacturerController(sckt);
                              }
                          } catch (IOException | ClassNotFoundException e) {
                              e.printStackTrace();

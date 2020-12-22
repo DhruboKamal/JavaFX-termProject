@@ -35,8 +35,60 @@ public class ManufacturerSceneController {
     private TextField DeleteCarField;
 
     @FXML
-    void addCar(ActionEvent event) {
+    private TextField registrationField;
 
+    @FXML
+    private TextField priceField;
+
+    @FXML
+    private TextField regNoFireld;
+
+    @FXML
+    private TextField yearField;
+
+    @FXML
+    private TextField color1Field;
+
+    @FXML
+    private TextField color2Field;
+
+    @FXML
+    private TextField color3Field;
+
+    @FXML
+    private TextField makeField;
+
+    @FXML
+    private TextField modelField;
+
+
+    @FXML
+    void addCar(ActionEvent event) {
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                ObjectOutputStream objectoutputstream = null;
+                try {
+                    objectoutputstream = new ObjectOutputStream(SocketConnection.getInstance().getSocket().getOutputStream());
+                    objectoutputstream.writeObject("AddCar");
+                    objectoutputstream.flush();
+
+                    Car tempCar = new Car(registrationField.getText(), Integer.parseInt(yearField.getText()),color1Field.getText(),color2Field.getText(),color3Field.getText(),makeField.getText(),modelField.getText(),Integer.parseInt(priceField.getText()));
+                    objectoutputstream.writeObject(tempCar);
+                    objectoutputstream.flush();
+
+                    ObjectInputStream ois = new ObjectInputStream(SocketConnection.getInstance().getSocket().getInputStream());
+                    String ReplyMessage = (String) ois.readObject();
+                    Alert A = new Alert(Alert.AlertType.INFORMATION);
+                    A.setHeaderText("Delete Operation");
+                    A.setContentText(ReplyMessage);
+                    A.showAndWait();
+
+                } catch (IOException | ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @FXML
@@ -83,11 +135,7 @@ public class ManufacturerSceneController {
                     objectoutputstream.writeObject("viewAllCars");
                     objectoutputstream.flush();
 
-                    //receiving the car list
-                    ObjectInputStream ois = new ObjectInputStream(SocketConnection.getInstance().getSocket().getInputStream());
-                    List<Car> lst = (List<Car>) ois.readObject();
-                    System.out.println("All Cars in the list is received by Manufacturer.");
-                    for (Car c: lst){c.DisplayInfo();}
+
                     //Loading JavaFX
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample/Manufacturer/ManufacturerAllCar.fxml"));
                     Stage stage = (Stage) viewAllCarBtn.getScene().getWindow();
@@ -95,7 +143,7 @@ public class ManufacturerSceneController {
                     Scene scene = new Scene(loader.load(), 700.0, 460.0);
                     stage.setScene(scene);
 
-                } catch (IOException | ClassNotFoundException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
 

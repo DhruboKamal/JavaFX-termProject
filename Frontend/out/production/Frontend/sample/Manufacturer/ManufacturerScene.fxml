@@ -13,12 +13,12 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button fx:id="AddCarBtn" layoutX="417.0" layoutY="305.0" mnemonicParsing="false" onAction="#addCar" text="Add a car">
+      <Button fx:id="AddCarBtn" layoutX="497.0" layoutY="386.0" mnemonicParsing="false" onAction="#addCar" text="Add a car">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="DeleteCarBtn" layoutX="87.0" layoutY="305.0" mnemonicParsing="false" onAction="#deleteCar" text="Delete a car">
+      <Button fx:id="DeleteCarBtn" layoutX="87.0" layoutY="231.0" mnemonicParsing="false" onAction="#deleteCar" text="Delete a car">
          <font>
             <Font size="14.0" />
          </font>
@@ -28,12 +28,29 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="EditCarBtn" layoutX="85.0" layoutY="130.0" mnemonicParsing="false" onAction="#editCar" text="Edit a car">
+      <Button fx:id="EditCarBtn" layoutX="87.0" layoutY="328.0" mnemonicParsing="false" onAction="#editCar" text="Edit a car">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Label layoutX="87.0" layoutY="240.0" text="Delete car by Registration Number" />
-      <TextField fx:id="DeleteCarField" layoutX="85.0" layoutY="264.0" />
+      <Label layoutX="87.0" layoutY="166.0" text="Delete car by Registration Number" />
+      <TextField fx:id="DeleteCarField" layoutX="85.0" layoutY="190.0" />
+      <Label layoutX="486.0" layoutY="70.0" text="Add a new Car" />
+      <Label layoutX="414.0" layoutY="100.0" text="Registration Number" />
+      <Label layoutX="421.0" layoutY="136.0" text="Year" />
+      <Label layoutX="415.0" layoutY="169.0" text="Color 1" />
+      <Label layoutX="419.0" layoutY="205.0" text="Color 2" />
+      <Label layoutX="419.0" layoutY="240.0" text="Color 3" />
+      <Label layoutX="418.0" layoutY="274.0" text="Make" />
+      <Label layoutX="417.0" layoutY="311.0" text="Model" />
+      <Label layoutX="420.0" layoutY="343.0" text="Price" />
+      <TextField fx:id="registrationField" layoutX="537.0" layoutY="96.0" />
+      <TextField fx:id="yearField" layoutX="537.0" layoutY="132.0" />
+      <TextField fx:id="color1Field" layoutX="537.0" layoutY="165.0" />
+      <TextField fx:id="color2Field" layoutX="537.0" layoutY="201.0" />
+      <TextField fx:id="color3Field" layoutX="537.0" layoutY="237.0" />
+      <TextField fx:id="makeField" layoutX="537.0" layoutY="270.0" />
+      <TextField fx:id="modelField" layoutX="537.0" layoutY="306.0" />
+      <TextField fx:id="priceField" layoutX="537.0" layoutY="339.0" />
    </children>
 </AnchorPane>
