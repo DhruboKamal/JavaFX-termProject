@@ -24,7 +24,7 @@ public class App
         //UserMap
         final HashMap<String, String> userMap;
         userMap = new HashMap<>();
-        userMap.put("user-a", "a");
+        userMap.put("admin", "1234");
         userMap.put("user-b", "b");
         userMap.put("user-c", "c");
         userMap.put("user-d", "d");
@@ -66,7 +66,6 @@ public class App
                              //authentication
                              if(user.getUserName().equals("viewer")){
                                  //client is a viewer.
-
                                  oos.writeObject("viewer detected");
                                  oos.flush();
                                  viewerController(sckt);
@@ -80,6 +79,7 @@ public class App
                                      //client is a authenticated manufacturer
                                      oos.writeObject("manufacturer detected");
                                      oos.flush();
+                                     manufacturerController(sckt);
                                  }
                                  else{
                                      //client entered wrong username or password
@@ -106,7 +106,8 @@ public class App
 
                                  viewerController(sckt);
 
-                             }else if(request.equalsIgnoreCase("findByReg")){
+                             }
+                             else if(request.equalsIgnoreCase("findByReg")){
                                  //search by registration number
                                  System.out.println("Search car by Reg no request");
 
@@ -136,6 +137,44 @@ public class App
                          }
 
                      }
+
+                     private void manufacturerController(Socket sckt){
+                         try{
+                             ObjectInputStream objectInputStream = new ObjectInputStream(sckt.getInputStream());
+                             String request = (String) objectInputStream.readObject();
+                             if(request.equalsIgnoreCase("viewAllCars")){
+                                 //view all car
+                                 ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
+                                 objectoutputstream.writeObject(lst);
+                                 objectoutputstream.flush();
+                                 manufacturerController(sckt);
+                             }
+                             else if(request.equalsIgnoreCase("DeleteCar")){
+                                 String RegNo = (String) objectInputStream.readObject();
+                                 String ReplyMessage;
+                                 int deleteidx = -1;
+                                 for(int i=0; i< lst.size() ; i++){
+                                     if(lst.get(i).getRegistration().equalsIgnoreCase(RegNo)){
+                                         deleteidx = i;
+                                         break;
+                                     }
+                                 }
+                                 if(deleteidx == -1) ReplyMessage="Car not found, couldn't delete";
+                                 else{
+                                     lst.remove(deleteidx);
+                                     ReplyMessage="Delete Successful";
+                                 }
+                                 ObjectOutputStream objectoutputstream = new ObjectOutputStream(sckt.getOutputStream());
+                                 objectoutputstream.writeObject(ReplyMessage);
+
+                                 manufacturerController(sckt);
+
+                             }
+                         } catch (IOException | ClassNotFoundException e) {
+                             e.printStackTrace();
+                         }
+                     }
+
                  }.start();
             }
             catch(IOException e) {

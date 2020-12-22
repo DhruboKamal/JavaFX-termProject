@@ -13,7 +13,7 @@ public class Car implements Serializable {
     public Car(){
 
     }
-    Car(String registration, int year, String color1, String color2, String color3, String maker, String model, int price){
+    public Car(String registration, int year, String color1, String color2, String color3, String maker, String model, int price){
         this.registration = registration;this.year = year;
         this.color1 = color1;this.color2 = color2;this.color3 = color3;
         this.maker = maker;this.model = model;

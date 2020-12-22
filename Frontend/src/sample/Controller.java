@@ -64,8 +64,14 @@ public class Controller {
                         Scene scene = new Scene(loader.load(), 700.0, 460.0);
                         stage.setScene(scene);
                     }
-                    else if(response.equalsIgnoreCase("manufacture detected")){
-
+                    else if(response.equalsIgnoreCase("manufacturer detected")){
+                        //server confirmed that its a manufacturer.
+                        System.out.println("server confirmed that its a manufacturer.");
+                        FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample/Manufacturer/manufacturerScene.fxml"));
+                        Stage stage = (Stage) loginbutton.getScene().getWindow();
+                        stage.setTitle("Viewer Window");
+                        Scene scene = new Scene(loader.load(), 700.0, 460.0);
+                        stage.setScene(scene);
                     }
                 }
                 catch (Exception e){

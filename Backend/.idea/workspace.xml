@@ -3,23 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="bb05622b-1eb3-4449-bf03-40246ef50e41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/in.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SharedClass/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SharedClass/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SharedClass/FileOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SharedClass/FileOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SharedClass/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SharedClass/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SharedClass/FileOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SharedClass/FileOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/App$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/App$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/out/production/Frontend/SharedClass/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/out/production/Frontend/SharedClass/Car.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/out/production/Frontend/sample/viewer/AllCarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/out/production/Frontend/sample/viewer/AllCarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/out/production/Frontend/sample/viewer/ViewerSceneBuilder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/out/production/Frontend/sample/viewer/ViewerSceneBuilder$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/out/production/Frontend/sample/viewer/ViewerSceneBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/out/production/Frontend/sample/viewer/ViewerSceneBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/out/production/Frontend/sample/viewer/allCar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/out/production/Frontend/sample/viewer/allCar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/src/SharedClass/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/SharedClass/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/src/sample/viewer/AllCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/sample/viewer/AllCarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/sample/viewer/ViewerSceneBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/sample/viewer/ViewerSceneBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Frontend/src/sample/viewer/allCar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/sample/viewer/allCar.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Frontend" />
+    <property name="last_opened_file_path" value="E:/LEVEL 1- TERM 2/Codes/offline 5" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -95,7 +88,7 @@
       <updated>1608562181024</updated>
       <workItem from="1608562184791" duration="12347000" />
       <workItem from="1608581008791" duration="862000" />
-      <workItem from="1608584010363" duration="7576000" />
+      <workItem from="1608584010363" duration="11069000" />
     </task>
     <servers />
   </component>
@@ -107,31 +100,31 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608567261006" />
-    <state x="565" y="217" key="FileChooserDialogImpl" timestamp="1608584100098">
+    <state x="565" y="217" key="FileChooserDialogImpl" timestamp="1608601467174">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state x="-1181" y="261" key="FileChooserDialogImpl/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608572886339" />
-    <state x="565" y="217" key="FileChooserDialogImpl/0.0.1468.864@0.0.1468.864" timestamp="1608584100098" />
-    <state width="1425" height="201" key="GridCell.Tab.0.bottom" timestamp="1608593753813">
+    <state x="565" y="217" key="FileChooserDialogImpl/0.0.1468.864@0.0.1468.864" timestamp="1608601467174" />
+    <state width="1425" height="286" key="GridCell.Tab.0.bottom" timestamp="1608601992178">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state width="1877" height="192" key="GridCell.Tab.0.bottom/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608578938029" />
-    <state width="1425" height="201" key="GridCell.Tab.0.bottom/0.0.1468.864@0.0.1468.864" timestamp="1608593753813" />
-    <state width="1425" height="201" key="GridCell.Tab.0.center" timestamp="1608593753813">
+    <state width="1425" height="286" key="GridCell.Tab.0.bottom/0.0.1468.864@0.0.1468.864" timestamp="1608601992178" />
+    <state width="1425" height="286" key="GridCell.Tab.0.center" timestamp="1608601992178">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state width="1877" height="192" key="GridCell.Tab.0.center/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608578938029" />
-    <state width="1425" height="201" key="GridCell.Tab.0.center/0.0.1468.864@0.0.1468.864" timestamp="1608593753813" />
-    <state width="1425" height="201" key="GridCell.Tab.0.left" timestamp="1608593753813">
+    <state width="1425" height="286" key="GridCell.Tab.0.center/0.0.1468.864@0.0.1468.864" timestamp="1608601992178" />
+    <state width="1425" height="286" key="GridCell.Tab.0.left" timestamp="1608601992178">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state width="1877" height="192" key="GridCell.Tab.0.left/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608578938029" />
-    <state width="1425" height="201" key="GridCell.Tab.0.left/0.0.1468.864@0.0.1468.864" timestamp="1608593753813" />
-    <state width="1425" height="201" key="GridCell.Tab.0.right" timestamp="1608593753813">
+    <state width="1425" height="286" key="GridCell.Tab.0.left/0.0.1468.864@0.0.1468.864" timestamp="1608601992178" />
+    <state width="1425" height="286" key="GridCell.Tab.0.right" timestamp="1608601992178">
       <screen x="0" y="0" width="1468" height="864" />
     </state>
     <state width="1877" height="192" key="GridCell.Tab.0.right/0.0.1468.864/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1608578938029" />
-    <state width="1425" height="201" key="GridCell.Tab.0.right/0.0.1468.864@0.0.1468.864" timestamp="1608593753813" />
+    <state width="1425" height="286" key="GridCell.Tab.0.right/0.0.1468.864@0.0.1468.864" timestamp="1608601992178" />
     <state x="-1578" y="222" key="new project wizard" timestamp="1608563302552">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

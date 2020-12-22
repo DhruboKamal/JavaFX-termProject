@@ -8,16 +8,16 @@
 <AnchorPane prefHeight="460.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.viewer.AllCarController">
    <children>
       <Button fx:id="backBtn" layoutX="629.0" layoutY="402.0" mnemonicParsing="false" onAction="#goToMainMenu" text="Back" />
-      <TableView layoutX="14.0" layoutY="30.0" prefHeight="200.0" prefWidth="684.0">
+      <TableView fx:id="SimpleTable" layoutX="35.0" layoutY="38.0" prefHeight="200.0" prefWidth="596.0">
         <columns>
-          <TableColumn fx:id="registrationCol" prefWidth="92.0" text="Registration" />
-          <TableColumn fx:id="yearCol" prefWidth="54" text="Year" />
-            <TableColumn fx:id="color1Col" prefWidth="84" text="Color 1" />
-            <TableColumn fx:id="color2Col" prefWidth="84" text="Color 2" />
-            <TableColumn fx:id="color3Col" prefWidth="84" text="Color 3" />
-            <TableColumn fx:id="makeCol" prefWidth="72.0" text="Make" />
-            <TableColumn fx:id="modelCol" prefWidth="61.5999755859375" text="Model" />
-            <TableColumn fx:id="priceCol" prefWidth="60.0" text="Price" />
+          <TableColumn fx:id="RegistrationID" prefWidth="75.0" text="Registration" />
+          <TableColumn fx:id="yearID" prefWidth="48.0" text="Year" />
+            <TableColumn fx:id="color1ID" prefWidth="61.60003662109375" text="Color 1" />
+            <TableColumn fx:id="color2ID" prefWidth="57.59991455078125" text="Color 2" />
+            <TableColumn fx:id="color3ID" prefWidth="63.20001220703125" text="Color 3" />
+            <TableColumn fx:id="makeID" prefWidth="75.0" text="make" />
+            <TableColumn fx:id="modelID" prefWidth="75.0" text="model" />
+            <TableColumn fx:id="priceID" prefWidth="75.0" text="Price" />
         </columns>
       </TableView>
    </children>
